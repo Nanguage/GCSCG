@@ -11,17 +11,52 @@
 </head>
 <body>
     {% block body %}
-    <div class="navbar navbar-inverse">
-        <div class="navbar-inner">
-          <a class="brand" href="#">GangCao's Lab</a>
-          <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-    </div>
+    <!-- nav bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">GangCao's Lab</a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about/team.html">Team</a></li>
+                            <li><a href="about/news.html">News</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reaserch <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="reaserch/projects.html">Projects</a></li>
+                            <li><a href="reaserch/publications.html">Publications</a></li>
+                            <li><a href="reaserch/software.html">Software</a></li>
+                            <li><a href="reaserch/data.html">Data</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="join.html">Join</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Education <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="education/course.html">Course</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+          
     {% endblock %}
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="static/js/bootstrap.js"></script>
