@@ -1,8 +1,55 @@
 {% extends "base.j2" %}
 {% block head %}
     {{ super() }}
+    <style>
+        img.car-img {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100vh;
+            height: auto;
+        }
+
+    </style>
 {% endblock %}
 {% block body %}
     {{ super() }}
-    <h1>Hello World!</h1>
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img src="static/img/test_title0.png" alt="test0" class="car-img">
+                <div class="carousel-caption">
+                    <h3>Test Title0</h3>
+                    <p>Test text bla bla bla...</p>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="static/img/test_title1.png" alt="test1" class="car-img">
+                <div class="carousel-caption">
+                    <h3>Test Title1</h3>
+                    <p>Test text bla bla bla...</p>
+                </div>
+            </div>
+        
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 {% endblock %}
