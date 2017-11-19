@@ -14,7 +14,8 @@ class Manager(object):
     def generate(self, site_path, force=True):
         """ generate web pages """
         if not force:
-            Q = "This will clear all existing files in the path {}, sure? ([yes]/no)".format(site_path)
+            Q = "This will clear all existing files in the path" + \
+                " {}, sure? ([yes]/no)".format(site_path)
             reply = input(Q)
             if reply == 'no':
                 raise SystemExit
