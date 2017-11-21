@@ -1,6 +1,6 @@
 # GCSCG - Gang Cao's lab Static website Code Generator
 
-The static website generator for out laboratory
+The static website generator for our laboratory
 
 ## prerequisites
 1. python3
